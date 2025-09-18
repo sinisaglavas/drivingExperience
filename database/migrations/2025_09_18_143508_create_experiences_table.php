@@ -23,7 +23,7 @@ return new class extends Migration
             $table->timestamps();
         });
     }
-//driver_id, car_id, ocena (1–5), komentar, datum
+
     /**
      * Reverse the migrations.
      */
