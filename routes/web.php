@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\CarController;
 use App\Http\Controllers\DriverController;
+use App\Http\Controllers\ExperienceController;
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 
@@ -34,6 +35,10 @@ Route::middleware('auth')->group(function () {
     Route::put('/edit-car/{car}', [CarController::class, 'edit'])->name('editCar');
     Route::get('/delete-car/{car}', [CarController::class, 'delete'])->name('deleteCar');
 
+    Route::get('/experiences', [ExperienceController::class, 'index']);
+
+
+    //Route::get('/car-experience-form', [ExperienceController::class, ''])
 
 
 });

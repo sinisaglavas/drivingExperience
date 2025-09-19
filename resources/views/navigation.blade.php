@@ -16,7 +16,7 @@
                     <a class="nav-link" href="/cars">Automobili</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Page3</a>
+                    <a class="nav-link" href="/experiences">Iskustva</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
