@@ -12,7 +12,7 @@ class Car extends Model
         "driver_id",
         "brand",
         "model",
-        "yearProduction",
+        "year_production",
     ];
     //One-to-many: jedan automobil → više iskustava
     public function carExperiences()
