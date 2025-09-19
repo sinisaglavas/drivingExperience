@@ -13,8 +13,8 @@
         <form action="{{ route('createCar') }}" method="post" class="m-3">
             @csrf
             <div class="row d-flex justify-content-center">
-                <div class="col-6">
-                    <h3 class="text-secondary">Obrazac za unos novog automobila</h3>
+                <div class="col-12">
+                    <h3 class="text-secondary text-center">Obrazac za unos novog automobila</h3>
                 </div>
             </div>
             <div class="row d-flex justify-content-center">

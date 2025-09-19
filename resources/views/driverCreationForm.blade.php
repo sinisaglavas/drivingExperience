@@ -13,8 +13,8 @@
         <form action="{{ route('createDriver') }}" method="post" class="m-3">
             @csrf
             <div class="row d-flex justify-content-center">
-                <div class="col-6">
-                    <h3 class="text-secondary">Obrazac za unos novog vozača</h3>
+                <div class="col-12">
+                    <h3 class="text-secondary text-center">Obrazac za unos novog vozača</h3>
                 </div>
             </div>
             <div class="row d-flex justify-content-center">
@@ -26,7 +26,7 @@
                 </div>
                 <div class="col-4">
                     <label class="badge bg-secondary" for="years-experience">Unesite godine iskustva ako ih imate</label>
-                    <input type="number" name="years_experience" id="years-experience" class="form-control" value="0">
+                    <input type="number" min="0" max="100" name="years_experience" id="years-experience" class="form-control" value="0">
                     <button type="submit" class="form-control btn-secondary mt-4">Pošalji podatke</button>
                 </div>
             </div>

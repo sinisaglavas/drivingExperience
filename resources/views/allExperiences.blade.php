@@ -6,7 +6,7 @@
 
 @section('contentPage')
     <div class="container">
-        <a href="" class="btn btn-secondary btn-sm m-2">Biraj automobil i ostavi iskustvo</a>
+        <a href="{{ route('experienceForm') }}" class="btn btn-secondary btn-sm m-2">Biraj automobil i ostavi iskustvo</a>
         <h3 class="mt-2 mb-2">Sva iskustva:</h3>
         <table class="table table-bordered">
             <tr class="text-center">

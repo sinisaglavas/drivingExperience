@@ -36,6 +36,9 @@ Route::middleware('auth')->group(function () {
     Route::get('/delete-car/{car}', [CarController::class, 'delete'])->name('deleteCar');
 
     Route::get('/experiences', [ExperienceController::class, 'index']);
+    Route::get('/experience-creation-form',[ExperienceController::class,'experienceCreationForm'])->name('experienceForm');
+    Route::post('/create-experience', [ExperienceController::class, 'create'])->name('createExperience');
+
 
 
     //Route::get('/car-experience-form', [ExperienceController::class, ''])
