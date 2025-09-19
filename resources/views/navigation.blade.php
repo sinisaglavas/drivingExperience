@@ -10,10 +10,10 @@
                     <a class="nav-link active" aria-current="page" href="/">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="/drivers">Svi vozači</a>
+                    <a class="nav-link" href="/drivers">Vozači</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Page2</a>
+                    <a class="nav-link" href="/cars">Automobili</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#">Page3</a>

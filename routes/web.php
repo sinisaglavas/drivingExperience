@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\CarController;
 use App\Http\Controllers\DriverController;
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
@@ -25,6 +26,15 @@ Route::middleware('auth')->group(function () {
     Route::get('/driver-edit-form/{driver}', [DriverController::class, 'driverEditForm'])->name('driverEditForm');
     Route::put('/edit-driver/{driver}', [DriverController::class, 'edit'])->name('editDriver');
     Route::get('/delete-driver/{driver}', [DriverController::class, 'delete'])->name('deleteDriver');
+
+    Route::get('/cars', [CarController::class, 'index']);
+    Route::view('/car-creation-form','carCreationForm');
+    Route::post('/create-car', [CarController::class, 'create'])->name('createCar');
+    Route::get('/car-edit-form/{car}', [CarController::class, 'carEditForm'])->name('carEditForm');
+    Route::put('/edit-car/{car}', [CarController::class, 'edit'])->name('editCar');
+    Route::get('/delete-car/{car}', [CarController::class, 'delete'])->name('deleteCar');
+
+
 
 });
 

@@ -13,11 +13,9 @@ return new class extends Migration
     {
         Schema::create('cars', function (Blueprint $table) {
             $table->id();
-            $table->unsignedBigInteger('driver_id');
-            $table->string('brand')->nullable();
-            $table->string('model')->nullable();
-            $table->unsignedSmallInteger('year_production')->nullable();
-            $table->foreign('driver_id')->references('id')->on('drivers')->cascadeOnDelete();
+            $table->string('brand');
+            $table->string('model');
+            $table->unsignedSmallInteger('year_production');
             $table->timestamps();
         });
     }
