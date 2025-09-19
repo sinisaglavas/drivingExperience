@@ -39,6 +39,8 @@ Route::middleware('auth')->group(function () {
     Route::get('/experience-creation-form',[ExperienceController::class,'experienceCreationForm'])->name('experienceForm');
     Route::post('/create-experience', [ExperienceController::class, 'create'])->name('createExperience');
 
+    Route::get('/average-grade', [CarController::class, 'averageGrade'])->name('averageGrade');
+
 
 
     //Route::get('/car-experience-form', [ExperienceController::class, ''])

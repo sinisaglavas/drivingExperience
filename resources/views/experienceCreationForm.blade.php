@@ -20,25 +20,25 @@
             <div class="row d-flex justify-content-center">
                 <div class="col-4">
                     <label class="badge bg-secondary" for="driver">Odaberite vozača</label>
-                    <select name="driver_id" id="driver" class="form-control">
-                        <option value=""></option>
+                    <select name="driver_id" id="driver" class="form-control" required>
+                        <option value="">--  Biranje vozača  --</option>
                         @foreach($drivers as $driver)
                             <option value="{{ $driver->id }}">{{ $driver->name }}</option>
                         @endforeach
                     </select>
                     <label class="badge bg-secondary" for="car">Odaberite automobil</label>
-                    <select name="car_id" id="car" class="form-control">
-                        <option value=""></option>
+                    <select name="car_id" id="car" class="form-control" required>
+                        <option value="">--  Biranje automobila  --</option>
                     @foreach($cars as $car)
                             <option value="{{ $car->id }}">{{ $car->brand }} - {{ $car->model }} {{ $car->year_production }} god.</option>
                         @endforeach
                     </select>
                     <label class="badge bg-secondary" for="grade">Unesite ocenu 1-5 (Obavezan unos)</label>
-                    <input type="number" name="grade" min="1" max="5" id="grade" class="form-control">
+                    <input type="number" name="grade" min="1" max="5" id="grade" class="form-control" required>
                     <label class="badge bg-secondary" for="comment">Unesite komentar (Nije obavezan unos)</label>
                     <textarea name="comment" id="comment" cols="30" rows="4" class="form-control"></textarea>
                     <label class="badge bg-secondary" for="date">Unesite datum</label>
-                    <input type="date" name="date" id="date" class="form-control" value="{{ \Carbon\Carbon::now()->format('Y-m-d') }}">
+                    <input type="date" name="date" id="date" class="form-control" value="{{ \Carbon\Carbon::now()->format('Y-m-d') }}" required>
                     <button type="submit" class="form-control btn-secondary mt-4">Pošalji podatke</button>
                 </div>
             </div>

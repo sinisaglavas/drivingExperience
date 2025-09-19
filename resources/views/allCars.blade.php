@@ -13,6 +13,7 @@
                 <th>Marka</th>
                 <th>Model</th>
                 <th>Godina proizvodnje</th>
+                <th>Prosečna ocena</th>
                 <th>Promeni</th>
                 <th>Obriši</th>
             </tr>
@@ -21,6 +22,7 @@
                     <td>{{ $car->brand }}</td>
                     <td>{{ $car->model }}</td>
                     <td>{{ $car->year_production }}</td>
+                    <td>{{ round($car->averageGrade(), 2) }}</td>
                     <td><a href="{{ route('carEditForm', ['car' => $car->id]) }}">
                             <i class="fa-solid fa-wrench"></i>
                         </a>

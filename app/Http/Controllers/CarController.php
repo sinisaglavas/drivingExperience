@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Car;
+use App\Models\Experience;
 use Illuminate\Http\Request;
 
 class CarController extends Controller
@@ -53,6 +54,11 @@ class CarController extends Controller
         $car->delete();
 
         return redirect()->back();
+    }
+
+    public function averageGrade()
+    {
+
     }
 
 }

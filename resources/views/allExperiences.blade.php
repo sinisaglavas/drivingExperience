@@ -25,7 +25,7 @@
                     <td>{{ $experience->car->brand }} - {{ $experience->car->model }}</td>
                     <td>{{ $experience->car->year_production }}</td>
                     <td>{{ $experience->grade }}</td>
-                    <td>{{ $experience->comment }}</td>
+                    <td>{{ $experience->comment ?? "Vozač nije uneo komentar" }}</td>
                     <td>{{ $experience->date }}</td>
                     <td><a href="">
                             <i class="fa-solid fa-wrench"></i>

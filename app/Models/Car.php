@@ -15,9 +15,15 @@ class Car extends Model
         "year_production",
     ];
     //One-to-many: jedan automobil → više iskustava
-    public function carExperiences()
+    public function experiences()
     {
         return $this->hasMany(Experience::class, 'car_id', 'id')
             ->orderBy('date');
     }
+
+    public function averageGrade()
+    {
+        return $this->experiences()->avg('grade');
+    }
+
 }
