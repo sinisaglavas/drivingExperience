@@ -40,6 +40,9 @@ Route::middleware('auth')->group(function () {
     Route::post('/create-experience', [ExperienceController::class, 'create'])->name('createExperience');
 
     Route::get('/average-grade', [CarController::class, 'averageGrade'])->name('averageGrade');
+    Route::get('/car/driver-experience-form', [ExperienceController::class, 'carDriverExperienceForm'])->name('carDriverExperienceForm');
+    Route::post('/driver-experiences', [ExperienceController::class, 'driverExperiences'])->name('driverExperiences');
+    Route::post('/car-experiences', [ExperienceController::class, 'carExperiences'])->name('carExperiences');
 
 
 

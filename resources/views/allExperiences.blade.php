@@ -6,7 +6,14 @@
 
 @section('contentPage')
     <div class="container">
-        <a href="{{ route('experienceForm') }}" class="btn btn-secondary btn-sm m-2">Biraj automobil i ostavi iskustvo</a>
+        <div class="row">
+            <div class="col-3">
+                <a href="{{ route('experienceForm') }}" class="btn btn-secondary btn-sm m-2">Biraj automobil i ostavi iskustvo</a>
+            </div>
+            <div class="col-3">
+                <a href="{{ route('carDriverExperienceForm') }}" class="btn btn-secondary btn-sm m-2">Iskustva po vozaču ili automobilu</a>
+            </div>
+        </div>
         <h3 class="mt-2 mb-2">Sva iskustva:</h3>
         <table class="table table-bordered">
             <tr class="text-center">
