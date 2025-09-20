@@ -57,5 +57,12 @@ class DriverController extends Controller
         return redirect()->back();
     }
 
+    public function drivenCars(Driver $driver)
+    {
+        $cars = $driver->cars; // svi automobili koje je vozio i ocenjivao
+
+        return view('drivenCars', compact('cars', 'driver'));
+    }
+
 }
 

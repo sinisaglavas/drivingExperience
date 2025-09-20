@@ -60,7 +60,6 @@
                                 </div>
                                 <div class="card-footer bg-transparent border-success"><mark class="fw-bold fs-5">Ocena: {{ $experience->grade }}</mark></div>
                             </div>
-{{--                            <p> - {{ $experience->comment }}</p>--}}
                         @endforeach
                     @endif
 

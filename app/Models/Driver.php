@@ -19,4 +19,13 @@ class Driver extends Model
         return $this->hasMany(Experience::class, 'driver_id', 'id')
             ->orderBy('date');
     }
+
+    public function cars()
+    {
+        return $this->belongsToMany(Car::class, 'experiences')
+            ->withPivot('grade')
+            ->withPivot('comment')
+            ->withPivot('date'); // i datum
+    }
+
 }

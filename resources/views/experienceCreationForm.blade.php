@@ -38,7 +38,7 @@
                     <label class="badge bg-secondary" for="comment">Unesite komentar (Nije obavezan unos)</label>
                     <textarea name="comment" id="comment" cols="30" rows="4" class="form-control"></textarea>
                     <label class="badge bg-secondary" for="date">Unesite datum</label>
-                    <input type="date" name="date" id="date" class="form-control" value="{{ \Carbon\Carbon::now()->format('Y-m-d') }}" required>
+                    <input type="date" name="date" id="date" class="form-control" required>
                     <button type="submit" class="form-control btn-secondary mt-4">Pošalji podatke</button>
                 </div>
             </div>

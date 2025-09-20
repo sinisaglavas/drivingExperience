@@ -13,6 +13,7 @@
                 <th>Ime i prezime</th>
                 <th>Email</th>
                 <th>Godine iskustva</th>
+                <th>Vožena auta</th>
                 <th>Promeni</th>
                 <th>Obriši</th>
             </tr>
@@ -21,6 +22,10 @@
                     <td>{{ $driver->name }}</td>
                     <td>{{ $driver->email }}</td>
                     <td>{{ $driver->years_experience }}</td>
+                    <td><a href="{{ route('drivenCars', ['driver' => $driver->id]) }}">
+                            <i class="fa-solid fa-car"></i>
+                        </a>
+                    </td>
                     <td><a href="{{ route('driverEditForm', ['driver' => $driver->id]) }}">
                             <i class="fa-solid fa-wrench"></i>
                         </a>

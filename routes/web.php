@@ -43,11 +43,7 @@ Route::middleware('auth')->group(function () {
     Route::get('/car/driver-experience-form', [ExperienceController::class, 'carDriverExperienceForm'])->name('carDriverExperienceForm');
     Route::post('/driver-experiences', [ExperienceController::class, 'driverExperiences'])->name('driverExperiences');
     Route::post('/car-experiences', [ExperienceController::class, 'carExperiences'])->name('carExperiences');
-
-
-
-    //Route::get('/car-experience-form', [ExperienceController::class, ''])
-
+    Route::get('/driven-cars/{driver}', [DriverController::class, 'drivenCars'])->name('drivenCars');
 
 });
 
